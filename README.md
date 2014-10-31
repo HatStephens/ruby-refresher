@@ -3,7 +3,7 @@
 ## My Progress
 
 - [x] Questions 1-10 complete
-- [ ] Questions 11-20 complete
+- [x] Questions 11-20 complete
 - [ ] Questions 21-30 complete
 - [ ] Questions 31-40 complete
 - [ ] Question 41 complete

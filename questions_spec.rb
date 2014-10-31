@@ -116,35 +116,35 @@ describe 'the Friday test :)' do
     expect(n).to eq [1, 3, 5, 4, 1, 2]
   end
 
-  # specify 'convert_array_to_a_hash' do
-  #   n = convert_array_to_a_hash ['a', 'b', 'c', 'd']
-  #   expect(n).to eq({'a' => 'b', 'c' => 'd'})
-  # end
+  specify 'convert_array_to_a_hash' do
+    n = convert_array_to_a_hash ['a', 'b', 'c', 'd']
+    expect(n).to eq({'a' => 'b', 'c' => 'd'})
+  end
 
-  # specify 'get_all_letters_in_array_of_words' do
-  #   n = get_all_letters_in_array_of_words ['cat', 'dog', 'fish']
-  #   expect(n).to eq ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
-  # end
+  specify 'get_all_letters_in_array_of_words' do
+    n = get_all_letters_in_array_of_words ['cat', 'dog', 'fish']
+    expect(n).to eq ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
+  end
 
-  # specify 'swap_keys_and_values_in_a_hash' do
-  #   n = swap_keys_and_values_in_a_hash({'a' => 'b', 'c' => 'd'})
-  #   expect(n).to eq({'b' => 'a', 'd' => 'c'})
-  # end
+  specify 'swap_keys_and_values_in_a_hash' do
+    n = swap_keys_and_values_in_a_hash({'a' => 'b', 'c' => 'd'})
+    expect(n).to eq({'b' => 'a', 'd' => 'c'})
+  end
 
-  # specify 'add_together_keys_and_values' do
-  #   n = add_together_keys_and_values({1 => 1, 2 => 2})
-  #   expect(n).to eq 6
-  # end
+  specify 'add_together_keys_and_values' do
+    n = add_together_keys_and_values({1 => 1, 2 => 2})
+    expect(n).to eq 6
+  end
 
-  # specify 'remove_capital_letters_from_string' do
-  #   n = remove_capital_letters_from_string 'Hello JohnDoe'
-  #   expect(n).to eq 'ello ohnoe'
-  # end
+  specify 'remove_capital_letters_from_string' do
+    n = remove_capital_letters_from_string 'Hello JohnDoe'
+    expect(n).to eq 'ello ohnoe'
+  end
 
-  # specify 'round_up_number' do
-  #   n = round_up_number 3.142
-  #   expect(n).to eq 4
-  # end
+  specify 'round_up_number' do
+    n = round_up_number 3.142
+    expect(n).to eq 4
+  end
 
   # specify 'round_down_number' do
   #   n = round_down_number 4.9
