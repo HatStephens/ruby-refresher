@@ -168,16 +168,19 @@ end
 # round down a float up and convert it to an Integer,
 # so 9.52 becomes 9
 def round_down_number(float)
+	float.floor
 end
 
 # take a date and format it like dd/mm/yyyy, so Halloween 2013
 # becomes 31/10/2013
 def format_date_nicely(date)
+	date.strftime("%d/%m/%Y")
 end
 
 # get the domain name *without* the .com part, from an email address
 # so alex@makersacademy.com becomes makersacademy
 def get_domain_name_from_email_address(email)
+	email.chars.to_a.drop_while{|char| char != '@'}.drop(1).take_while{|char| char != '.'}.join
 end
 
 # capitalize the first letter in each word of a string, 
@@ -186,6 +189,8 @@ end
 # 'the lion the witch and the wardrobe' becomes
 # 'The Lion the Witch and the Wardrobe'
 def titleize_a_string(string)
+	arr = ['a','and','the']
+	string.capitalize.split(' ').map{|word| arr.include?(word) ? word : word.capitalize}.join(' ')
 end
 
 # return true if a string contains any special characters
